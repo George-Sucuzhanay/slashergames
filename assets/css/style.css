@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     background: rgb(255,186,60);
     background: linear-gradient(90deg, rgba(255,186,60,1) 0%, rgba(244,164,28,1) 48%, rgba(255,197,75,1) 100%);
-    padding: 30px;
+    padding: 0px;
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -21,7 +21,7 @@ p {
     font-size: 36px;
     text-align: center;
 }
-button {
+h1 {
     border-radius: 20px;
     text-align: center;
     padding: 10px;
@@ -34,10 +34,12 @@ body {
   background: linear-gradient(90deg, rgba(98,93,93,1) 0%, rgba(77,69,69,1) 64%, rgba(94,87,87,1) 100%);
 }
 #description {
-  background-color: white;
+  background-color: rgb(98,93,93);
   color: black;
   border-radius: 20px;
   padding: 10px;
+  background: linear-gradient(90deg, rgba(98,93,93,1) 0%, rgba(77,69,69,1) 64%, rgba(94,87,87,1) 100%);
+}
 }
 #desp {
   color: black;
@@ -58,6 +60,9 @@ html {
   width: 25%;
   margin-bottom: 16px;
   padding: 0 8px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
@@ -87,22 +92,11 @@ html {
 .title {
   color: grey;
 }
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-.button:hover {
-  background-color: #555;
-}
 
-
+.logo h1 {
+  margin-top: 00px; 
+  font-size: 1px;
+}
 
 .logo {
   display: flex;
@@ -113,4 +107,16 @@ html {
   margin: 20px;;
   width: 150px;
   height: 150px;
+}
+
+.column img {
+  border-radius: 50%;
+  width: 600px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
 }
