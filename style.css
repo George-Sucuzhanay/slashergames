@@ -98,29 +98,24 @@ html {
 }*/
 
 .column {
-  float: left;
   width: 25%;
   margin-bottom: 16px;
   padding: 0 8px;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  
+  justify-content: center;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
-  .column {
-   
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-
-  }
+ 
 }
 
 /* Add some shadows to create a card effect */
 .card {
   box-shadow: 6px 8px 0 rgba(0, 0, 0, 0.2);
+  /* display: flex;
+  justify-content: center; */
 }
 
 /* Some left and right padding inside the container */
@@ -128,12 +123,12 @@ html {
   padding: 16px;
 }
 
-/* Clear floats */
+/* Clear floats
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
-}
+} */
 .title {
   color: grey;
 }
@@ -160,8 +155,8 @@ html {
   border-radius: 50%;
   width: 600px;
   height: 350px;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
 }
 a, a:hover, a:focus, a:active {
   text-decoration: none;
@@ -191,4 +186,23 @@ a, a:hover, a:focus, a:active {
 
 .contact p {
   font-size: 30px;
+}
+
+.khye img {
+  width: 100px;
+}
+
+.container {
+ 
+  text-align: center;
+
+}
+.container img {
+  width: 350px;
+}
+canvas{
+  text-align: center;
+  display: flex;
+  align-self: center;
+  margin: auto
 }
