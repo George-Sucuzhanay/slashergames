@@ -11,13 +11,13 @@ function preload(){
 }
 
 function setup(){
-    createCanvas(800,800);
+    createCanvas(1700,700);
     //Set background for Game
     // image(img, 0, 0, 700, 700);
 }
 
 function draw(){
-    image(img, 0, 0, 700, 700);
+    image(img, 0, 0, 1700, 700);
     //Player char is a red dot
     fill(255, 0, 0);
     noStroke();
@@ -38,3 +38,4 @@ function draw(){
     //Add random events in map, smthn  to be done after above
 
 }
+<br>
