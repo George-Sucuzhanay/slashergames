@@ -38,4 +38,3 @@ function draw(){
     //Add random events in map, smthn  to be done after above
 
 }
-<br>
