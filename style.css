@@ -48,7 +48,9 @@ path {
 text {
   fill: #FF9800;
 }
-
+.title {
+  color: black;
+}
 
 h1 {
     font-size: 50px;
@@ -75,7 +77,7 @@ body {
   background-color: rgb(98,93,93);
   color: black;
   border-radius: 20px;
-  padding: 10px;
+  padding: 80px;
   background: linear-gradient(90deg, rgba(98,93,93,1) 0%, rgba(77,69,69,1) 64%, rgba(94,87,87,1) 100%);
 }
 #desp {
@@ -130,7 +132,7 @@ html {
   display: table;
 } */
 .title {
-  color: grey;
+  color:black;
 }
 
 .logo h1 {
@@ -182,6 +184,8 @@ a, a:hover, a:focus, a:active {
 
 .contact h1 {
   font-size: 40px;
+  text-align: center;
+
 }
 
 .contact p {
@@ -200,12 +204,11 @@ a, a:hover, a:focus, a:active {
 .container img {
   width: 350px;
 }
+
+
 canvas{
 
-  text-align: center;
-  display: flex;
-  align-self: center;
-  margin: auto;
+  margin: auto; 
   border: black solid 12px;
 
 }
@@ -219,8 +222,8 @@ canvas{
   width: 1700px;
   background-size: 100% 100%;
   border: black solid 12px;
-height: 700px;
-width: 1700px;
+  height: 700px;
+  width: 1700px;
 
 
   text-align: center;

@@ -12,29 +12,33 @@ let bankYPos = 403;
 let pizzaXPos = 986;
 let pizzaYPos = 388;
 let speed = 5;
-let state = 2;
+let state = 1;
 let money = 100;
 let storeEvent = 1;
-let 
+let cnv;
+let centerX = 850;
+let centerY = 350;
+
 
 function preload(){
     img = loadImage("images/background.jpg");
 }
 
+function centerCanvas() {
+    var x = (windowWidth - width) / 2;
+    var y = (windowHeight - height) / 2;
+    cnv.position(x, y);
+  }
+
 function setup(){
-    createCanvas(1700,700);
-    //Assign position values to each of the locations
-    // let playButton = document.createElement("h1");
-    // playButton.innerHTML('jsdjvjdvnb');
-    // playButton.appendChild(canvas)
-    //Set background for Game
-    // image(img, 0, 0, 700, 700);
+ cnv = createCanvas(1700,700);
+ centerCanvas();
 }
 
 function draw(){
 
     if(state === 1){
-       
+        
         let start = document.querySelector("h3");
         let canvas = document.querySelector("canvas");
         let startDiv = document.getElementById("play");
@@ -116,13 +120,17 @@ function draw(){
         }
     
     
-      if (state == 2) {
-        let div = createDiv('').size(500, 500);
-        div.style('background-color', 'white');
-        div.center();
-       
-        
-        }
+      function menuStorePopup() {
+        fill(255);
+        rect(centerX, centerY, 200, 300);
+        fill(0,255,0)
+        fill(0);
+        text('Buy For $50', centerX - 180, centerY);
+        textSize(65);
 
+
+        }
+        
+        menuStorePopup();
  }
 }
