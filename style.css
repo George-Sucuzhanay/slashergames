@@ -214,19 +214,13 @@ canvas{
 }
 
 #play{
-  
- 
   font-size: 90px;
   background-image: url("images/background2.jpeg");
-  height: 700px;
-  width: 1700px;
   background-size: 100% 100%;
   border: black solid 12px;
   height: 700px;
   width: 1700px;
-
-
-  text-align: center;
+ text-align: center;
 display: flex;
 align-items: center;
 margin: auto;
@@ -243,4 +237,10 @@ text-align: center;
 }
 #play h3:hover {
   color: red;
+}
+
+.gameTitle {
+  font-size: 70px;
+  text-align: center;
+
 }

@@ -1,8 +1,4 @@
 let img;
-let xPos = 178;
-let yPos = 95;
-let homeXPos = 178;
-let homeYPos = 91;
 let officeXPos = 1589;
 let officeYPos = 110;
 let storeXPos = 1557;
@@ -18,6 +14,25 @@ let storeEvent = 1;
 let cnv;
 let centerX = 850;
 let centerY = 350;
+
+
+//player
+let xPos = 180;
+let yPos = 85;
+let playerTop, playerBottom, playerRight, playerLeft;
+playerTop = yPos + 30;
+playerBottom = yPos - 30;
+playerRight = xPos + 30;
+playerLeft = xPos - 30;
+
+//locations
+let homeXPos = 180;
+let homeYPos = 85;
+let homeBottom, homeTop, homeLeft, homeRight;
+homeBottom =  homeYPos - 40;
+homeTop = homeYPos + 40;
+homeLeft = homeXPos - 40;
+homeRight = homeXPos + 40;
 
 
 function preload(){
@@ -80,11 +95,13 @@ function draw(){
         if(keyIsDown(68)){
         xPos++;
         }
+        console.log("play xpos", xPos);
+        console.log("player ypos",yPos);
         //Add random events in map, smthn  to be done after above
-        if(xPos < homeXPos - 30 || yPos < homeYPos - 30 || xPos > homeXPos + 40 || yPos > homeYPos + 30 ){
+        if(playerTop >= homeBottom){
             text("There's an attempt a break in attempt at your house!", 850, 700);
             fill(r, g, b);
-            square(homeXPos, homeYPos, 50);
+            rect(homeXPos, homeYPos, 40);
             console.log("player is home")
         }
         else if(xPos < officeXPos - 30 || yPos < officeYPos - 30 || xPos > officeXPos + 40 || yPos > officeYPos + 30){
@@ -125,7 +142,7 @@ function draw(){
         rect(centerX, centerY, 200, 300);
         fill(0,255,0)
         fill(0);
-        text('Buy For $50', centerX - 180, centerY);
+        text('Pay', centerX - 180, centerY);
         textSize(65);
 
 
