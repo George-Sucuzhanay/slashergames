@@ -1,0 +1,73 @@
+/*  Navbar */
+#nav_bar{
+    display: flex;
+    justify-content: space-evenly;
+    background: #ff7200;
+    /* background: linear-gradient(90deg, rgba(255,186,60,1) 0%, rgba(244,164,28,1) 48%, rgba(255,197,75,1) 100%); */
+    padding: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: black;
+    font-size: 10px;
+    border-bottom: #FF9800 solid 8px;
+
+}
+#nav_bar h1 {
+    font-size: 29px;
+}
+#g1:hover { color: white; text-shadow: 2px 2px #ff0000; transition: 0.3s;}
+#g2:hover { color: white; text-shadow: 2px 2px #ff0000; transition: 0.3s;}
+#g3:hover { color: white; text-shadow: 2px 2px #ff0000; transition: 0.3s}
+#g4:hover { color: white; text-shadow: 2px 2px #ff0000; transition: 0.3s}
+#g5:hover { color: white; text-shadow: 2px 2px #ff0000; transition: 0.3s}
+#g6:hover { color: white; text-shadow: 2px 2px #ff0000; transition: 0.3s}
+#menu:hover { color: white; text-shadow: 2px 2px #ff0000; transition: 0.3s}
+.logo h1:hover { color: white; text-shadow: 2px 2px #ff0000; transition: 0.3s}
+
+#slash {
+  display: flex;
+  justify-content: flex-start;
+  transform: rotate(90deg);
+  width: 250px;
+  height: 250px;
+  margin: 0px;
+  padding: 0px;
+  -webkit-filter: drop-shadow(2px 2px 0 #FF9800)
+  drop-shadow(-1px -1px 0 #FF9800);
+filter: drop-shadow(2px 1px 0 #FF9800) 
+drop-shadow(2px 2px 0 #FF9800);
+}
+
+path {
+  fill: transparent;
+}
+
+text {
+  fill: #FF9800;
+}
+
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+p {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+}
+h1 {
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    font-size: 22px;
+}
+body {
+  background: rgb(98,93,93);
+  font-family: Sectar;
+  background: linear-gradient(90deg, rgba(98,93,93,1) 0%, rgba(77,69,69,1) 64%, rgba(94,87,87,1) 100%);
+}

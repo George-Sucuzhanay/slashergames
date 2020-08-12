@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
+    <!--Flashy-Master Game-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -10,7 +11,59 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="/assets/fonts/Sectar.otf" rel="stylesheet">
     <script src="script.js" defer></script>
+
+
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/bmoren/p5.collide2D@0.6/p5.collide2d.min.js"></script>
+
+  <script src="/games/Flashy-master/js/ray.js"></script>
+  <script src="/games/Flashy-master/js/mob.js"></script>
+  <script src="/games/Flashy-master/js/timebar.js"></script>
+  <script src="/games/Flashy-master/js/boundary.js"></script>
+  <script src="/games/Flashy-master/js/player.js"></script>
+  <script src="/games/Flashy-master/sketch.js"></script>
+
+
  <title>Slasher Games</title>
+
+ <style>
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  canvas {
+    display: flex;
+    vertical-align: middle;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    border-radius: 15px;
+    border-radius: 15px;
+  }
+
+  p {
+    color: #6d6d6d;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  code {
+    color: #ffffff;
+    background-color: #b7b5b5;
+    padding: 3px;
+    border-radius: 3px;
+
+  }
+</style>
 </head>
 <body>
     <br> <br> <br><br><br>
@@ -29,6 +82,8 @@
       <img src="/images/logo.png" id = 'logos'> 
     </div>
       <br> 
-
+      <div id="sketch-holder">
+      </div>
+      <p>Use <code>WASD</code> or <code>arrow keys</code> to move the player and the mouse to look around.</p>
 </body>
 </html>

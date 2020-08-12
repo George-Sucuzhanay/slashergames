@@ -201,8 +201,43 @@ a, a:hover, a:focus, a:active {
   width: 350px;
 }
 canvas{
+
   text-align: center;
   display: flex;
   align-self: center;
-  margin: auto
+  margin: auto;
+  border: black solid 12px;
+
+}
+
+#play{
+  
+ 
+  font-size: 90px;
+  background-image: url("images/background2.jpeg");
+  height: 700px;
+  width: 1700px;
+  background-size: 100% 100%;
+  border: black solid 12px;
+height: 700px;
+width: 1700px;
+
+
+  text-align: center;
+display: flex;
+align-items: center;
+margin: auto;
+}
+
+#play h3 {
+color: #FF9800;
+display: flex;
+align-self: center;
+margin: auto;
+font-size: 80px;
+white-space: nowrap;
+text-align: center;
+}
+#play h3:hover {
+  color: red;
 }
